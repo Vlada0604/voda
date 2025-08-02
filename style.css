@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #e0f7fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background: white;
+  margin: 1rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+}
+
+input, select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.counter {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.progress {
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #26c6da;
+  transition: width 0.3s;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 1rem auto;
+  font-size: 1rem;
+  border: none;
+  background-color: #26c6da;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+}
+
+button:hover {
+  background-color: #00acc1;
+}
+
+.history {
+  margin-top: 2rem;
+}
+
+.history-item {
+  border-top: 1px solid #ddd;
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 0.5rem;
+    padding: 1rem;
+  }
+
+  .counter {
+    font-size: 1.5rem;
+  }
+}
